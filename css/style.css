@@ -1,5 +1,5 @@
 :root{
-    --main-color:#D9D9D9;
+    --main-color:#d9d9d9e2;
     --header-background-color:#35736E;
     --accent-background-color:rgba(53, 115, 110, 0.1);
     --yellow-color:#F9BF29;
@@ -7,11 +7,14 @@
     --black-btn-background-color:#171515;
     --accent-color:rgba(255, 255, 255, 0.29);
     --white-color:#FFFFFF;
+    --text-color :#6A6A6A;
+    --background-color-header:#35736E;
 
 
 }
 body{
     font-family: 'Inter', sans-serif;
+     background-color: var(--main-color);
 }
 
 .container {
@@ -22,7 +25,7 @@ body{
 /* Header */
 
 .box{
-    background-color:#35736E;
+    background-color:var(--background-color-header);
 }
 .logo-link{
     color: var(--white-color);
@@ -135,7 +138,7 @@ max-width: 228px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    color: #6A6A6A;
+    color:var(--text-color);
     margin-bottom: 33px;
     
 }
@@ -149,8 +152,8 @@ max-width: 228px;
     color: var(--white-color);
 }
 .description-btn:hover{
-    background-color: var(--yellow-color);
-    color: var(--black-color);
+    background-color: var(--background-color-header);
+    color: var(--white-color);
 }
 .price-list{
     display: flex;
@@ -162,4 +165,60 @@ max-width: 228px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/* section about*/
+
+.about-wraper{
+    display: flex;
+    margin-top: 208px;
+    gap: 124px;
+}
+.about{
+    width: 480px;
+}
+.about-title{
+    margin-bottom: 27px;
+    font-weight: 600;
+font-size: 34px;
+line-height: 1.2;
+color: var(--black-color);
+}
+.about-text{
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+color: var(--text-color);
+}
+.info-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-item{
+width: calc(100% / 2);
+}
+
+.info-icon{
+    width: 44px;
+    height: 74px;
+}
+.info-title{
+    font-weight: 600;
+font-size: 14px;
+line-height: 1.6;
+color: var(--black-color);
+}
+.info-text{
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.6;
+color: var(--text-color);
+}
+.about-box{
+    max-width: 542px;
+    
+}
+.about-box-img{
+    width: 100%;
+    
 }
