@@ -1,5 +1,5 @@
 :root {
-  --main-color: #d9d9d9e2;
+  --main-color:#EFF2F1;
   --header-background-color: #35736e;
   --accent-background-color: rgba(53, 115, 110, 0.1);
   --yellow-color: #f9bf29;
@@ -196,6 +196,8 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: var(--text-color);
+
+  margin-bottom: 90px;
 }
 .info-list {
   display: flex;
@@ -204,16 +206,30 @@ body {
 .info-item {
   width: calc(100% / 2);
 }
-
+.info-item:nth-child(-n + 2) {
+  padding-bottom: 46px;
+}
 .info-icon {
-  width: 44px;
-  height: 74px;
+  position: relative;
+}
+
+#circle {
+  position: absolute;
+  /* display: block; */
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: rgba(53, 115, 110, 0.2);
+  margin-left: 12px;
+  margin-top: 4px;
 }
 .info-title {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.6;
   color: var(--black-color);
+
+  margin-bottom: 9px;
 }
 .info-text {
   font-weight: 400;
@@ -226,6 +242,7 @@ body {
 }
 .about-box-img {
   width: 100%;
+  border-radius: 2%;
 }
 
 /* section design*/
@@ -378,9 +395,9 @@ body {
   gap: 30px;
   margin-top: 36px;
 }
-.blog-img{
-    border-radius: 4%;
-    margin-top: 44px;
+.blog-img {
+  border-radius: 4%;
+  margin-top: 44px;
 }
 .blog-title {
   font-weight: 600;
@@ -393,4 +410,59 @@ body {
   font-size: 14px;
   line-height: 1.2;
   columns: var(--black-color);
+}
+
+/* footer */
+
+.footer {
+  margin-top: 159px;
+  background-color: var(--white-color);
+}
+.form {
+  display: flex;
+}
+.form-wraper {
+  margin-top: 57px;
+}
+.form-letter {
+  display: flex;
+  align-items: center;
+      margin-bottom: 24px;
+      gap: 12px;
+  
+}
+.form-letter-title{
+font-weight: 600;
+font-size: 18px;
+line-height: 1.2;
+color: var(--black-color);
+}
+
+.form-mail {
+  display: flex;
+  gap: 15px;
+}
+.form-mail-input {
+  width: 262px;
+  height: 45px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+.form-mail-btn {
+  width: 50px;
+  height: 47.7px;
+  background: #35736e;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.form-icon-telegram {
+  /* position: absolute; */
+  display: block;
+  text-align: center;
+}
+.form-img-wraper {
+  position: relative;
+  bottom: 86px;
+  margin-left: auto;
 }
