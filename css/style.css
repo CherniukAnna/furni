@@ -1,5 +1,5 @@
 :root {
-  --main-color:#EFF2F1;
+  --main-color: #eff2f1;
   --header-background-color: #35736e;
   --accent-background-color: rgba(53, 115, 110, 0.1);
   --yellow-color: #f9bf29;
@@ -427,15 +427,14 @@ body {
 .form-letter {
   display: flex;
   align-items: center;
-      margin-bottom: 24px;
-      gap: 12px;
-  
+  margin-bottom: 24px;
+  gap: 12px;
 }
-.form-letter-title{
-font-weight: 600;
-font-size: 18px;
-line-height: 1.2;
-color: var(--black-color);
+.form-letter-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--black-color);
 }
 
 .form-mail {
@@ -465,4 +464,88 @@ color: var(--black-color);
   position: relative;
   bottom: 86px;
   margin-left: auto;
+}
+
+.aside {
+  display: flex;
+  gap: 65px;
+  margin-top: 17px;
+}
+/* .aside-content{
+  max-width: 360px;
+} */
+
+.aside-content-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--black-color);
+}
+.aside-content-text {
+  max-width: 360px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+.aside-content-list {
+  display: flex;
+  gap: 59px;
+}
+/* .aside-content-item{
+  justify-content: space-between;
+  
+  flex-direction: column;
+
+} */
+.aside-content-link {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--text-color);
+}
+.aside-widget-list {
+  display: flex;
+  gap: 11px;
+  margin-top: 43px;
+  margin-bottom: 68px;
+}
+
+.aside-widget-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: #d9d9d9;
+}
+.aside-widget-link:hover{
+  background-color: var(--background-color-header);
+  fill: var(--white-color);
+}
+
+
+.aside-info{
+    display: flex;
+    justify-content: baseline;
+    margin-bottom: 63px;
+  }
+.aside-info-text{
+  margin-right: 512px;
+  font-weight: 400;
+font-size: 13px;
+line-height: 1.9;
+color: var(--text-color);
+}
+.aside-info-link{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+color: var(--text-color);
+}
+.aside-info-link:not(:last-child){
+  margin-right: 42px;
 }
