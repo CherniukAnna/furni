@@ -371,6 +371,71 @@ body {
   color: var(--text-color);
 }
 
+/* slider */
+.section-title{
+  text-align: center;
+  margin-top: 95px;
+  margin-bottom: 47px;
+  font-weight: 600;
+font-size: 34px;
+line-height: 1.2;
+color: var(--black-color);
+}
+.wraper-slider{
+  background-color: red;
+
+ 
+  
+}
+.slider-box{
+  background-color: blue;
+  max-width: 759px;
+  min-height: 359px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider-text-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider-text{
+  /* max-width: 759px; */
+  /* margin: 0 auto; */
+
+  font-weight: 400;
+font-size: 18px;
+line-height: 1.7;
+  /* text-align: center; */
+}
+.slider-img{
+  width: 77px;
+  height: 77px;
+  border-radius: 50px;
+}
+.slider-icon-next{
+  position: absolute;
+  border-radius: 50%;
+      right: 20px;
+    top: 50%;
+}
+.slider-icon-next:hover{
+  background-color: var(--background-color-header);
+}
+
+.slider-icon-prev{
+  position: absolute;
+  border-radius: 50%;
+  left: 20px;
+  top: 50%;
+  z-index: 3;
+}
+.slider-icon-prev:hover{
+  background-color: var(--background-color-header);
+}
 /* section blog*/
 .recent-blog {
   display: flex;
@@ -448,12 +513,21 @@ body {
   border-radius: 10px;
 }
 .form-mail-btn {
+  cursor: pointer;
+  justify-content: center;
+    align-items: center;
+    display: flex;
+
   width: 50px;
   height: 47.7px;
   background: #35736e;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
   box-sizing: border-box;
+}
+.form-mail-btn:hover{
+  background-color: var(--black-btn-background-color);
+  
 }
 .form-icon-telegram {
   /* position: absolute; */
@@ -531,7 +605,7 @@ body {
 .aside-info{
     display: flex;
     justify-content: baseline;
-    margin-bottom: 63px;
+    padding-bottom: 63px;
   }
 .aside-info-text{
   margin-right: 512px;
