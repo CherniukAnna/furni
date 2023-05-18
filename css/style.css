@@ -372,23 +372,23 @@ body {
 }
 
 /* slider */
-.section-title{
+.section-title {
   text-align: center;
   margin-top: 95px;
   margin-bottom: 47px;
   font-weight: 600;
-font-size: 34px;
-line-height: 1.2;
-color: var(--black-color);
+  font-size: 34px;
+  line-height: 1.2;
+  color: var(--black-color);
 }
-.wraper-slider{
+/* .wraper-slider{
   background-color: red;
 
  
   
-}
-.slider-box{
-  background-color: blue;
+} */
+.slider-box {
+  /* background-color: blue; */
   max-width: 759px;
   min-height: 359px;
   margin: 0 auto;
@@ -397,43 +397,52 @@ color: var(--black-color);
   align-items: center;
   justify-content: space-between;
 }
-.slider-text-box{
+.slider-text-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.slider-text{
-  /* max-width: 759px; */
-  /* margin: 0 auto; */
-
+.slider-text {
   font-weight: 400;
-font-size: 18px;
-line-height: 1.7;
-  /* text-align: center; */
+  font-size: 18px;
+  line-height: 1.7;
 }
-.slider-img{
+.slider-img {
   width: 77px;
   height: 77px;
   border-radius: 50px;
 }
-.slider-icon-next{
+.slider-title {
+  margin-top: 13px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--black-color);
+}
+.slider-info-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 2.5;
+  color: var(--black-color);
+}
+.slider-icon-next {
   position: absolute;
   border-radius: 50%;
-      right: 20px;
-    top: 50%;
+  right: 40px;
+  top: 10%;
 }
-.slider-icon-next:hover{
+.slider-icon-next:hover {
   background-color: var(--background-color-header);
 }
 
-.slider-icon-prev{
+.slider-icon-prev {
   position: absolute;
   border-radius: 50%;
-  left: 20px;
-  top: 50%;
+  left: 40px;
+  top: 10%;
   z-index: 3;
 }
-.slider-icon-prev:hover{
+.slider-icon-prev:hover {
   background-color: var(--background-color-header);
 }
 /* section blog*/
@@ -515,8 +524,8 @@ line-height: 1.7;
 .form-mail-btn {
   cursor: pointer;
   justify-content: center;
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 
   width: 50px;
   height: 47.7px;
@@ -525,9 +534,8 @@ line-height: 1.7;
   border-radius: 10px;
   box-sizing: border-box;
 }
-.form-mail-btn:hover{
+.form-mail-btn:hover {
   background-color: var(--black-btn-background-color);
-  
 }
 .form-icon-telegram {
   /* position: absolute; */
@@ -596,30 +604,29 @@ line-height: 1.7;
   border-radius: 50%;
   background: #d9d9d9;
 }
-.aside-widget-link:hover{
+.aside-widget-link:hover {
   background-color: var(--background-color-header);
   fill: var(--white-color);
 }
 
-
-.aside-info{
-    display: flex;
-    justify-content: baseline;
-    padding-bottom: 63px;
-  }
-.aside-info-text{
+.aside-info {
+  display: flex;
+  justify-content: baseline;
+  padding-bottom: 63px;
+}
+.aside-info-text {
   margin-right: 512px;
   font-weight: 400;
-font-size: 13px;
-line-height: 1.9;
-color: var(--text-color);
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--text-color);
 }
-.aside-info-link{
-font-weight: 400;
-font-size: 14px;
-line-height: 1.7;
-color: var(--text-color);
+.aside-info-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-color);
 }
-.aside-info-link:not(:last-child){
+.aside-info-link:not(:last-child) {
   margin-right: 42px;
 }
