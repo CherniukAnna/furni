@@ -14,12 +14,16 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--main-color);
 }
-
+.body-wraper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
 .container {
   max-width: 1146px;
   margin: 0 auto;
 }
-img{
+img {
   display: block;
   max-width: 100%;
 }
@@ -112,9 +116,17 @@ img{
   background-color: var(--black-btn-background-color);
 }
 .header-wraper-pik {
+  position: relative;
   max-width: 724px;
   margin-left: auto;
   margin-top: 126px;
+}
+
+
+.header-box-dot {
+  position: absolute;
+  top: 20px;
+  left: 560px;
 }
 /* section description*/
 .description-wraper {
@@ -186,7 +198,7 @@ img{
   gap: 124px;
 }
 .about {
-  width: 480px;
+  max-width: 480px;
 }
 .about-title {
   margin-bottom: 27px;
@@ -242,21 +254,31 @@ img{
   color: var(--text-color);
 }
 .about-box {
+  position: relative;
   max-width: 542px;
 }
 .about-box-img {
   width: 100%;
   border-radius: 2%;
 }
+.about-box-dot {
+  position: absolute;
+  top: -52px;
+  left: -82px;
+  z-index: -1;
+}
 
 /* section design*/
 .wraper-desigh {
   display: flex;
   gap: 51px;
+  margin-bottom: 174px;
+  margin-top: 195px;
 }
 .design {
   position: relative;
-  max-width: 632px;
+  width: 60%;
+  /* max-width: 632px; */
 }
 .design-img-sofa {
   border-radius: 4%;
@@ -269,13 +291,20 @@ img{
 }
 .design-img-chair {
   position: absolute;
-  bottom: 102px;
+  bottom: -44px;
   right: 0;
   border-radius: 4%;
+}
+.design-dot {
+  position: absolute;
+  top: -52px;
+  left: -113px;
+  z-index: -1;
 }
 .advice {
   display: block;
   max-width: 463px;
+  margin-left: auto;
 }
 .advice-title {
   font-weight: 600;
@@ -518,7 +547,7 @@ img{
   gap: 15px;
 }
 .form-mail-input {
-  width: 262px;
+  max-width: 262px;
   height: 45px;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
@@ -559,7 +588,7 @@ img{
   max-width: 360px;
 } */
 
-.aside-content-title {
+.aside-content-logo {
   font-weight: 500;
   font-size: 32px;
   line-height: 1.2;
@@ -614,7 +643,7 @@ img{
 .aside-info {
   display: flex;
   justify-content: baseline;
-  padding-bottom: 63px;
+  padding-bottom: 15px;
 }
 .aside-info-text {
   margin-right: 512px;
