@@ -22,7 +22,7 @@
 
 <body>
 <div class="body-wraper">
-    <header class="box">
+    <header class="box" id="home">
       <div class="container">
         <nav class="nav">
           <div class="logo">
@@ -33,19 +33,19 @@
           </button>
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#" class="nav-link">Home</a>
+              <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">about us</a>
+              <a href="#about" class="nav-link">about us</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Services</a>
+              <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Blog</a>
+              <a href="#blog" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contac us</a>
+              <a href="#contac" class="nav-link">Contac us</a>
             </li>
           </ul>
         </nav>
@@ -67,7 +67,7 @@
       </div>
     </header>
     <main>
-      <section>
+      <section id="about">
         <div class="container">
           <div class="description-wraper">
             <div class="description">
@@ -107,7 +107,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="services">
         <div class="container">
           <div class="about-wraper">
             <div class="about">
@@ -226,38 +226,45 @@
       <section>
         <div class="container">
           <div class="assortment-wraper">
-            <div class="assortment-picture">
-              <div id="square"></div>
-              <img src="image/png/product-1.png" alt="" class="assortment-img" />
+            <div class="assortment-wraper-box">
+              <div class="assortment-picture">
+                <img src="image/png/Group 1.png" alt="" class="assortment-img" />
+              </div>
+              <div class="assortment">
+                <h3 class="assortment-title">Nordic Chair</h3>
+                <p class="assortment-text">
+                  Donec mattis porta eros, aliquet finibus risus in. Donecd
+                </p>
+                <a href="" class="assortment-link">Read more</a>
+              </div>
             </div>
-            <div class="assortment">
-              <h3 class="assortment-title">Nordic Chair</h3>
-              <p class="assortment-text">
-                Donec mattis porta eros, aliquet finibus risus in. Donecd
-              </p>
-              <a href="" class="assortment-link">Read more</a>
+            <div class="assortment-wraper-box">
+              <div class="assortment-picture">
+              
+              
+                <img src="image/png/Group 2.png" alt="" class="assortment-img" />
+              </div>
+              <div class="assortment">
+                <h3 class="assortment-title">Kruzi Aero</h3>
+                <p class="assortment-text">
+                  Donec mattis porta eros, aliquet finibus risus in. Donecd
+                </p>
+                <a href="" class="assortment-link">Read more</a>
+              </div>
             </div>
-            <div class="assortment-picture">
-              <div id="square"></div>
-              <img src="image/png/product-2.png" alt="" class="assortment-img" />
-            </div>
-            <div class="assortment">
-              <h3 class="assortment-title">Kruzi Aero</h3>
-              <p class="assortment-text">
-                Donec mattis porta eros, aliquet finibus risus in. Donecd
-              </p>
-              <a href="" class="assortment-link">Read more</a>
-            </div>
-            <div class="assortment-picture">
-              <div id="square"></div>
-              <img src="image/png/product-3.png" alt="" class="assortment-img" />
-            </div>
-            <div class="assortment">
-              <h3 class="assortment-title">Ergonomic Chair</h3>
-              <p class="assortment-text">
-                Donec mattis porta eros, aliquet finibus risus in. Donecd
-              </p>
-              <a href="" class="assortment-link">Read more</a>
+            <div class="assortment-wraper-box">
+              <div class="assortment-picture">
+              
+              
+                <img src="image/png/Group 3.png" alt="" class="assortment-img" />
+              </div>
+              <div class="assortment">
+                <h3 class="assortment-title">Ergonomic Chair</h3>
+                <p class="assortment-text">
+                  Donec mattis porta eros, aliquet finibus risus in. Donecd
+                </p>
+                <a href="" class="assortment-link">Read more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -332,7 +339,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="blog">
         <div class="container">
           <div class="recent-blog">
             <h2 class="recent-blog-title">Recent Blog</h2>
@@ -358,7 +365,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contac">
       <div class="container">
         <div class="form">
           <div class="form-wraper">
@@ -452,6 +459,20 @@
         </div>
       </div>
     </footer>
+
+    <!-- <button id="myBtn" title="Go to top"><a href="#home">Top</a></button> -->
+    <div id="scrolTop" class="isShowBtn">
+      <svg class="scrol-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 512 512">
+        <title></title>
+        <g id="icomoon-ignore">
+        </g>
+        <path
+          d="M0 256c0 141.385 114.615 256 256 256s256-114.615 256-256-114.615-256-256-256-256 114.615-256 256zM464 256c0 114.875-93.125 208-208 208s-208-93.125-208-208 93.125-208 208-208 208 93.125 208 208z">
+        </path>
+        <path d="M353.372 334.628l45.256-45.256-142.628-142.627-142.627 142.628 45.254 45.254 97.373-97.372z"></path>
+      </svg>
+    </div>
+    
     
     <script src="https://code.jquery.com/jquery-3.7.0.slim.js"
       integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>

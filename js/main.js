@@ -22,3 +22,17 @@ burgerEl.addEventListener("click", () => {
   menuEl.classList.toggle("open");
 });
 
+
+
+const scrollBtn = document.querySelector(".isShowBtn");
+window.onscroll = () => {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.remove("hide");
+  } else if (window.scrollY < 300) {
+    scrollBtn.classList.add("hide");
+  }
+};
+
+scrollBtn.onclick = () => {
+  window.scrollTo(0, 0);
+}

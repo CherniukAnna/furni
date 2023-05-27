@@ -10,6 +10,10 @@
   --text-color: #6a6a6a;
   --background-color-header: #35736e;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--main-color);
@@ -121,7 +125,10 @@ img {
   margin-left: auto;
   margin-top: 126px;
 }
-
+.header-box-img{
+  position: relative;
+  z-index: 1;
+}
 
 .header-box-dot {
   position: absolute;
@@ -356,25 +363,47 @@ img {
 
 .assortment-wraper {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.assortment-picture {
+.assortment-wraper-box{
+  display: flex;
+  gap: 33px;
+}
+/* .assortment-picture {
   position: relative;
   margin-right: 33px;
-}
-.assortment-img {
-  position: absolute;
-  left: 0;
-  bottom: 8px;
-  /* top: 0; */
-}
-#square {
+  width: 98px;
+  height: 98px;
+} */
+/* .assortment-picture::after{
+  content:"";
+  display: block;
   width: 98px;
   height: 98px;
   background: rgba(53, 115, 110, 0.3);
   border-radius: 10px;
-}
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+} */
+/* .assortment-img {
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  width: 98px;
+  height: 120px;
+  top: 0;
+} */
+/* #square {
+  width: 98px;
+  height: 98px;
+  background: rgba(53, 115, 110, 0.3);
+  border-radius: 10px;
+} */
 .assortment {
   align-self: center;
+  max-width: 211px;
 }
 .assortment:not(:last-child) {
   margin-right: 49px;
@@ -660,4 +689,27 @@ img {
 }
 .aside-info-link:not(:last-child) {
   margin-right: 42px;
+}
+
+#scrolTop{
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+  font-size: 40px;
+  z-index: 999;
+  fill: var(--background-color-header);
+  cursor: pointer;
+  
+}
+#scrolTop:hover{
+  fill: var(--yellow-color);
+}
+
+
+.isShowBtn{
+  opacity: 1;
+  transition: .4s linear;
+}
+.isShowBtn.hide {
+  opacity: 0;
 }
