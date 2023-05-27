@@ -81,9 +81,11 @@
   /* slider */
   .slider-icon-next{
   display: none;
+  opacity: 0;
 }
 .slider-icon-prev{
   display: none;
+  opacity: 0;
 }
 
   /* section 5 */
@@ -284,9 +286,11 @@
 
 .slider-icon-next{
   display: none;
+  opacity: 0;
 }
 .slider-icon-prev{
   display: none;
+  opacity: 0;
 }
   /* section 5 */
 
