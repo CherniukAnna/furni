@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
@@ -25,29 +27,30 @@
     <header class="box" id="home">
       <div class="container">
         <nav class="nav">
-          <div class="logo">
-            <a href="#" class="logo-link">Furni.</a>
+          <div class="nav-logo">
+            <a href="#" class="nav-logo-link">Furni.</a>
           </div>
           <button class="header__burger-btn" id="burger">
             <span></span><span></span><span></span>
           </button>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">about us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="#blog" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contac" class="nav-link">Contac us</a>
-            </li>
-          </ul>
+          
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">about us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#blog" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contac" class="nav-link">Contac us</a>
+              </li>
+            </ul>
         </nav>
         <div class="header-wraper">
           <div class="header-wraper-content">
@@ -378,11 +381,11 @@
     
             <form action="" class="form-mail">
               <label for="">
-                <input type="text" class="form-mail-input">
+                <input type="text" placeholder="Enter your name" class="form-mail-input name-js">
     
               </label>
               <label for="">
-                <input type="text" class="form-mail-input">
+                <input type="email" placeholder="Enter your e-mail" class="form-mail-input mail-js">
               </label>
               <button type="submit" class="form-mail-btn">
                 <svg class="form-mail-icon" width="28" height="28">
@@ -461,7 +464,7 @@
     </footer>
 
     <!-- <button id="myBtn" title="Go to top"><a href="#home">Top</a></button> -->
-    <div id="scrolTop" class="isShowBtn">
+    <div id="scrolTop" class="isShowBtn hide">
       <svg class="scrol-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 512 512">
         <title></title>
         <g id="icomoon-ignore">
@@ -473,7 +476,7 @@
       </svg>
     </div>
     
-    
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.slim.js"
       integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"

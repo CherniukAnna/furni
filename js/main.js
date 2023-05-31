@@ -1,3 +1,5 @@
+// slider
+
 $(".slider").slick({
   dots: true,
   infinite: true,
@@ -15,6 +17,9 @@ $(".slider").slick({
 </svg>`,
 });
 
+
+// burger
+
 const burgerEl = document.querySelector("#burger");
 const menuEl = document.querySelector(".nav");
 
@@ -23,16 +28,79 @@ burgerEl.addEventListener("click", () => {
 });
 
 
-
+// scrol up
 const scrollBtn = document.querySelector(".isShowBtn");
 window.onscroll = () => {
-  if (window.scrollY > 300) {
-    scrollBtn.classList.remove("hide");
-  } else if (window.scrollY < 300) {
+  if (window.scrollY < 500) {
     scrollBtn.classList.add("hide");
+  } else if (window.scrollY > 500) {
+    scrollBtn.classList.remove("hide");
   }
 };
 
 scrollBtn.onclick = () => {
   window.scrollTo(0, 0);
 }
+
+
+
+// theme
+
+// document.querySelector(".themetoggle").addEventListener("click", (event) => {
+//   event.preventDefault();
+//   if (localStorage.getItem("theme") === "dark") {
+//     localStorage.removeItem("theme");
+//   } else {
+//     localStorage.setItem("theme", "dark");
+//   }
+//   addDarkClassToHTML();
+// });
+
+// function addDarkClassToHTML() {
+//   try {
+//     if (localStorage.getItem("theme") === "dark") {
+//       document.querySelector("html").classList.add("dark");
+//       document.querySelector(".themetoggle span").textContent = "dark_mode";
+//     } else {
+//       document.querySelector("html").classList.remove("dark");
+//       document.querySelector(".themetoggle span").textContent = "wb_sunny";
+//     }
+//   } catch (err) {}
+// }
+
+// addDarkClassToHTML();
+
+
+// validation
+
+const formEl = document.querySelector('.form-mail')
+const validation = new JustValidate(".form-mail", {
+  
+})
+validation.addField(".name-js", [
+  {
+    rule: "required",
+    errorMessage: "Write name, please",
+  },
+  {
+    rule: "minLength",
+    value: 3,
+    errorMessage: "not enough characters",
+  },
+  {
+    rule: "maxLength",
+    value: 10,
+    errorMessage: "many symbols"
+  },
+]);
+
+validation.addField(".mail-js", [
+  {
+    rule: "required",
+    errorMessage: "Write email, please",
+  },
+  {
+    rule: "email",
+    errorMessage: "Enter the correct email"
+  },
+]);
